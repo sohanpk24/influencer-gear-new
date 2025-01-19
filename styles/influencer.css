@@ -24,6 +24,9 @@ body{
 .display-flex{
     display: flex;
 }
+.description{
+    color: rgb(58, 58, 58);
+}
 
 /* nav styles */
 .nav-container{
@@ -50,11 +53,63 @@ body{
     font-weight: 500;
 }
 
+/* banner section style */
+.banner-container{
+    align-items: center;
+    margin-top: 4vw;
+    justify-content: space-between;
+}
+
+.banner-text-container{
+    width: 35vw;
+    display: grid;
+    gap: 10px;
+}
+
+.banner-title{
+    font-size: 4vw;
+    font-weight: 700;
+    color: rgba(58, 58, 58);
+}
+
+.banner-btn{
+    background-color: rgb(224, 44, 109);
+    width: 180px;
+    padding: 6px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.banner-img{
+    background-image: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+
+.banner-img img{
+    width: 100%;
+}
+
+
+
 /*  media query */
 @media screen and (max-width: 576px) {
     .nav-container{
         flex-direction: column;
         gap: 8px;
+        margin-top: 20px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .banner-img{
+        width: 400px;
         margin-top: 20px;
     }
 }
